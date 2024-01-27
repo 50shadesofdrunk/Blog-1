@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body { background-color: #333; color: #fff; }
+        a { color: #4a90e2; }
+        nav, footer { background-color: #222; }
+    </style>
+    <title>Contact Page</title>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Custom GPT Reviews</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#" role="button">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="grid">
+            <section>
+                <h2>Contact Us</h2>
+                <p>Have questions or feedback? We'd love to hear from you. Please fill out the form below, and we'll get back to you as soon as possible.</p>
+                <form>
+                    <input type="text" id="name" name="name" placeholder="Your Name" aria-label="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Your Email" required>
+                    <textarea id="message" name="message" placeholder="Your Message" aria-label="Your Message" required></textarea>
+                    <button type="submit" onclick="event.preventDefault()">Send Message</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer class="container">
+        <small><a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a></small>
+    </footer>
+</body>
+</html>
